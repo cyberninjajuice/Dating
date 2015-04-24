@@ -1,0 +1,11 @@
+<div id="current">
+  <ol>
+<%dates.forEach(function(date){%>
+  <div>
+  <p><strong><%-date.name%></strong><%-date.phone%><%-date.address%>, <%=date.password%></p>
+  <img src="<%=date.pic%>">
+  </div>
+<%});%>
+  </ol>
+</div>
+

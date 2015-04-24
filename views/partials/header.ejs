@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dating Profile</title>
+<style>
+body {
+  font: 14px Verdana, Arialblack, Arial, sans-serif;
+  margin:0 auto;
+}
+h2 {
+  text-align: center;
+  color:blanchedalmond;
+}
+span{
+  font-size: 30px;
+  font-weight: bold;
+  color:crimson;
+}
+div {
+  margin:0 auto;
+}
+input {
+    border:0px;
+    border-width: 20px;
+    line-height: 2em;
+    padding:0;
+    width: 3%;
+    height: 4em;
+}
+
+li {
+  line-height: 1.1em;
+}
+
+button {
+  font-size:2em;
+  padding:6px;
+  background:red;
+  border-top:2px solid transparent;
+  border-right:2px solid transparent;
+  border-left:2px solid transparent;
+  border-bottom:4px solid maroon;
+  border-radius:5px;
+  min-height:45px;
+  margin-right: 5px;
+}
+#seed {
+  border-top:2px solid transparent;
+  border-right:2px solid red;
+  border-left:2px solid red;
+  border-bottom:4px solid maroon;
+  background: rgba(200, 0, 0, 0.2);
+  width: 40%;
+}
+
+</style>
+</head>
+<body>
+<div id="current">
+  <ol>
+<%dates.forEach(function(date){%>
+  <div>
+  <%a href="<%=date.din%>" id="<%=date.din%>"><%-date.name%></a>
+  </div>
+<%});%>
+  </ol>
+</div>
+</body>
